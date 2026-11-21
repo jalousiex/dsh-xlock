@@ -1,0 +1,10 @@
+# dsh-xlock — 跨机粘性会话锁 + 冲突副本治理
+#
+# 把本包插进 profile 的条目列表：cordis 加载 index.js（宿主半），
+# apply() 里 ctx.inject(['sessionPersistence']) 后对实例做 open/create
+# 包装（跨机锁标记 + 尾部修复 + 冲突副本门禁）。详见包内 README.md。
+
+- insert:
+    - id: dsh-xlock
+      name: 'dsh-xlock'
+      config: {}

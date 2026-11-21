@@ -1,0 +1,10 @@
+{
+  "$comment": "dsh-xlock 配置（随同步面共享，各机一致；单机覆盖走 cordis.patch.yml 注入配置）。",
+  "retentionDays": 30,
+  "exportRetentionDays": 180,
+  "maxQuarantineBytes": 536870912,
+  "acquireQuiesceMs": 0,
+  "divergentGate": "block",
+  "startupGc": true,
+  "archiveSyncRoute": true
+}

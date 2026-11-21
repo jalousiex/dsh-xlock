@@ -1,0 +1,12 @@
+# 本机运行时状态与配置：不进仓库（含主机名、工作区路径、Syncthing 设备 ID）
+# machines.json 由各机 apply 时自动学习写入；示例见 machines.example.json
+machines.json
+
+# 计划文档（内部实施计划，不进公开仓库）
+PLAN-*.md
+
+# 杂项
+node_modules/
+*.log
+*.bak-*
+*.tmp

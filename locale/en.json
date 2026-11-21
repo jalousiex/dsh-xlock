@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cross-machine Session Lock",
+    "description": "Keeps synced DSH sessions safe across machines: a session in use on one machine blocks write-open on another; torn logs are repaired and Syncthing conflict copies triaged before open; creation origin and archive state travel with each session."
+  }
+}

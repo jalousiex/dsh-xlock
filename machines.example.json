@@ -1,0 +1,23 @@
+{
+  "$comment": "跨机机器登记表示例（脱敏）。真实 machines.json 不进仓库——它由各机 apply 时自动学习写入 ~/.dsh/dsh-plugins/dsh-xlock/machines.json（可用 DSH_XLOCK_REGISTRY 覆盖路径）。machines: machineId → {host, syncthing, cwds[]}，cwds 由各机 apply 时自动登记（只增不改），用于「会话桶名 → 机器」的创建归属推断；devices: Syncthing 设备短 ID → 机器名（冲突副本文件名里的最后一段），发现未知 ID 时 audit 会提示补录。",
+  "machines": {
+    "00000000-0000-0000-0000-000000000001": {
+      "host": "machine-a",
+      "syncthing": "AAAAAAA",
+      "cwds": [
+        "C:\\work\\demo"
+      ]
+    },
+    "00000000-0000-0000-0000-000000000002": {
+      "host": "machine-b",
+      "syncthing": "BBBBBBB",
+      "cwds": [
+        "D:\\work\\demo"
+      ]
+    }
+  },
+  "devices": {
+    "AAAAAAA": "machine-a",
+    "BBBBBBB": "machine-b"
+  }
+}
